@@ -1,16 +1,19 @@
 
+import { AnimatePresence } from 'framer-motion';
 import { Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Shared/Header';
 
 function App() {
   return (
-    <div>
-      <Header></Header>
-      <Routes>
+    <AnimatePresence>
+      <div>
+        <Header></Header>
+        <Routes>
 
-      </Routes>
-    </div>
+        </Routes>
+      </div>
+    </AnimatePresence>
   );
 }
 
